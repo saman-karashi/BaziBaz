@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../practice-js/ms-icon-70x70.png" type="image/x-icon">
+    <title>فروشگاه و سایت خبری بازی باز</title>
+  </head>
+  <body dir="rtl">
+    <!-- Mobile Menu Drawer -->
+    <nav id="mobile-nav">
+      <header class="bg-black py-2" id="mobile-header">
+        <span>سلام کاربر میهمان</span>
+        <a href="#" class="btn">ورود و عضویت</a>
+      </header>
+      <div class="wrapper">
+        <!-- Menu Bar -->
+        <ul class="menu-bar bg-gradient-mobile">
+          <li><a href="#">صفحه اصلی</a></li>
+          <li class="xbox-item">
+            <a href="">ایکس باکس <i class="fas fa-chevron-left"></i></a>
+          </li>
+          <li><a href="">گیفت کارت</a></li>
+          <li><a href="">نرم افزار</a></li>
+          <li class="courses-item">
+            <a href="">آموزش ها لازم <i class="fas fa-chevron-left"></i></a>
+          </li>
+          <li><a href="">تماس باما</a></li>
+          <li class="documents-item">
+            <a href="">مقالات <i class="fas fa-chevron-left"></i></a>
+          </li>
+          <li><a href="">سفارش بازی درخواستی</a></li>
+        </ul>
+        <!-- Xbox Bar-->
+        <ul class="xbox-bar bg-gradient-mobile">
+          <div class="bg-gradient2 py-2 center back-xbox-bar">
+            <a href="" class="light-dark right"
+              ><i class="fas fa-chevron-right"></i
+            ></a>
+            <a href="" class="white">ایکس باکس</a>
+          </div>
+          <li><a href="">بازی ها</a></li>
+          <li><a href="">لایو گلد , گیم پس</a></li>
+          <li><a href="">حراجی ها</a></li>
+        </ul>
+        <!-- Courses Bar -->
+        <ul class="courses-bar bg-gradient-mobile">
+          <div class="bg-gradient2 py-2 center back-courses-bar">
+            <a href="" class="light-dark right"
+              ><i class="fas fa-chevron-right"></i
+            ></a>
+            <a href="" class="white">مقالات</a>
+          </div>
+          <li><a href="#">نحوه ی ریست فکتوری</a></li>
+          <li><a href="">دی ان اس</a></li>
+          <li><a href="">اکانت</a></li>
+          <li><a href="">اضافه کردن اکانت</a></li>
+          <li><a href="">کد دیجیتال</a></li>
+          <li><a href="">لایو گلد</a></li>
+          <li><a href="">گیم پس</a></li>
+          <li><a href="">گیم پس التیمیت</a></li>
+          <li><a href="">ایی ای اکسس</a></li>
+        </ul>
+
+        <!-- Documents Bar -->
+        <ul class="documents-bar bg-gradient-mobile">
+          <div class="bg-gradient2 py-2 center back-documents-bar">
+            <a href="" class="light-dark right"
+              ><i class="fas fa-chevron-right"></i
+            ></a>
+            <a href="" class="white">مقالات</a>
+          </div>
+          <li><a href="#">آموزش</a></li>
+          <li><a href="#">آموزش کنسول</a></li>
+          <li><a href="#">مقاله</a></li>
+          <li><a href="#">نقد و بررسی بازی</a></li>
+        </ul>
+      </div>
+    </nav>
+   <!-- Modal Search -->
+   <div class="modal-search-container"></div>
+  <div class="modal-search bg-white">
+   <div class="card">
+     <header id="header-mobile" class="py-2 flex">
+       <div>
+         <span class="small dark-gray bold">جستجو در سایت</span>
+       </div>
+       <div>
+         <a href="#" class="big dark-gray"><i class="fas fa-times close-modal"></i></a>
+       </div>
+     </header>
+     <div class="search-field py-2 mx-2 py-5">
+       <form action="">
+         <input type="text" placeholder="دنبال چی میگردی؟" />
+         <button><i class="fas fa-search"></i></button>
+       </form>
+     </div>
+   </div>
+ </div>
+
+    <!-- Page Container -->
+    <div class="page-container">
+      <!-- Menu Max-width:768 -->
+      <div id="mobile-menu" class="bg-white">
+        <div class="row py-2">
+          <img src="../home-imgs/logo/favicon.png" alt="" />
+          <div class="icons">
+            <div>
+              <a href=""><i class="fas fa-shopping-basket"></i></a>
+              <span class="circle bg-green-light"></span>
+            </div>
+            <div>
+              <a href=""><i class="far fa-heart"></i></a>
+              <span class="circle bg-red"></span>
+            </div>
+            <div>
+              <a href="#"><i class="fas fa-search show-btn"></i></a>
+            </div>
+          </div>
+          <div class="hamburger">
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation Desktop -->
+      <nav id="menu-1">
+        <div class="col-1 bg-white py-2" id="main-content">
+          <div class="container">
+            <img
+              src="../home-imgs/logo/logo-250x79-1.png"
+              alt=""
+              class="logo"
+            />
+            <div class="panelbar py-2">
+              <a href="" class="btn light-gray"
+                ><i class="fa fa-unlock-alt"></i>ورود به سایت</a
+              >
+              <a href="" class="btn bg-gradient"
+                ><i class="fa fa-user"></i>عضویت در سایت</a
+              >
+            </div>
+            <div class="search-field py-2 mx-2">
+              <form action="">
+                <input type="text" placeholder="دنبال چی میگردی؟" />
+                <button><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+            <div class="icons py-2 mx-2">
+              <div>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                <span class="circle bg-green-light"></span>
+              </div>
+              <div>
+                <a href=""><i class="far fa-heart"></i></a>
+                <span class="circle bg-orange"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation Bottom -->
+        <div class="col-2 bg-dark">
+          <div class="container">
+            <ul class="list">
+              <li><a href="">صفحه نخست</a></li>
+              <li>
+                <a href="">ایکس باکس<i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="">بازی ها</a></li>
+                  <li><a href="">لایو گلد , گیم پس</a></li>
+                  <li><a href="">حراجی ها</a></li>
+                </ul>
+              </li>
+              <li><a href="">گیفت کارت</a></li>
+              <li><a href="">نرم افزار</a></li>
+              <li>
+                <a href="">آموزش ها لازم<i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="">نحوه ی ریست فکتوری</a></li>
+                  <li><a href="">دی ان اس</a></li>
+                  <li><a href="">اکانت</a></li>
+                  <li><a href="">اضافه کردن اکانت</a></li>
+                  <li><a href="">کد دیجیتال</a></li>
+                  <li><a href="">لایو گلد</a></li>
+                  <li><a href="">گیم پس</a></li>
+                  <li><a href="">گیم پس التیمیت</a></li>
+                  <li><a href="">ایی ای اکسس</a></li>
+                </ul>
+              </li>
+              <li><a href="">تماس باما</a></li>
+              <li>
+                <a href="">مقالات<i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="">آموزش</a></li>
+                  <li><a href="">آموزش بازی</a></li>
+                  <li><a href="">مقالات</a></li>
+                  <li><a href="">نقد و بررسی بازی</a></li>
+                </ul>
+              </li>
+              <li><a href="">سفارش بازی درخواستی</a></li>
+            </ul>
+            <div class="social-links">
+              <a href="" class="bg-light-red"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="" class="bg-light-blue"
+                ><i class="fab fa-telegram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="my-2">
+        <div class="container">
+          <section id="right-side">
+            <!-- Showcase-->
+            <header id="slider">
+              <div class="image-container">
+                <img
+                  src="../home-imgs/slider-imgs/Call-of-Duty-Black-Ops-Cold-War-Key-Art-With-Soldiers.jpg"
+                  alt=""
+                />
+                <img
+                  src="../home-imgs/slider-imgs/Assasins_creed_valhalla.png"
+                  alt=""
+                />
+                <img
+                  src="../home-imgs/slider-imgs/Watch-Dogs-Legion-oj8f22e8vh71wpmjw6dw9w5ivriilk45k56z6lqkbi-2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slider-buttons">
+                <button id="next"><i class="fas fa-chevron-right"></i></button>
+                <button id="prev"><i class="fas fa-chevron-left"></i></button>
+              </div>
+            </header>
+            <!-- Services Section-->
+            <article class="services-items py-2">
+              <div>
+                <img src="../home-imgs/services-imgs/s1.png" alt="" />
+                <div>
+                  <span class="small gray">خرید قانونی</span>
+                  <p class="barely-big">دارای مجوز</p>
+                </div>
+              </div>
+
+              <div>
+                <img src="../home-imgs/services-imgs/s2.png" alt="" />
+                <div>
+                  <span class="small gray">ضمانت اصل بودن</span>
+                  <p class="barely-big">خرید مستقیم از استور</p>
+                </div>
+              </div>
+
+              <div>
+                <img src="../home-imgs/services-imgs/s3.png" alt="" />
+                <div>
+                  <span class="small gray">گارانتی مادام العمر</span>
+                  <p class="barely-big">برای تمام محصولات</p>
+                </div>
+              </div>
+
+              <div>
+                <img src="../home-imgs/services-imgs/s4.png" alt="" />
+                <div>
+                  <span class="small gray">پرداخت مطمئن</span>
+                  <p class="barely-big">با کلیه کارت های شتاب</p>
+                </div>
+              </div>
+            </article>
+            <!-- Title-->
+            <article class="title bg-white py-2 my-1">
+              <div>
+                <h3 class="dark-gray barely-big">آخرین محصولات سایت</h3>
+              </div>
+              <div>
+                <span class="gray small bold">تمام محصولات</span>
+              </div>
+            </article>
+
+            <!-- Games-Items -->
+            <article class="game-items my-1">
+              <!-- Card 1 -->
+              <div class="card bg-white">
+                <a href=""
+                  ><img
+                    src="../home-imgs/card-imgs/71hPmCqq8vL._SL1346_-300x300.jpg"
+                    alt=""
+                /></a>
+                <h3 class="dark-gray barely-big py-2">Resident Evil Village</h3>
+                <div class="price-stuff bg-gray py-1">
+                  <span class="fa fa-id-card dark-gray"></span>
+                  <span class="small dark-gray"
+                    >۵۵۰,۰۰۰ تومان - ۱,۱۰۰,۰۰۰ تومان
+                  </span>
+                </div>
+                <div class="flex py-2">
+                  <span class="dark-gray small">
+                    <i class="fas fa-folder"></i>
+                    بازی ها
+                  </span>
+                  <span class="dark-gray small">
+                    <i class="fas fa-eye"></i>
+                    ۴۰۲ بازدید
+                  </span>
+                </div>
+                <div>
+                  <button class="btn-buy white bg-green">خرید محصولات</button>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="card bg-white">
+                <a href="#"
+                  ><img
+                    src="../home-imgs/card-imgs/justdaorg-Copy-255x255.jpg"
+                    alt=""
+                /></a>
+                <h3 class="dark-gray barely-big py-2">Just Dance 2021</h3>
+                <div class="price-stuff py-1 bg-gray">
+                  <span class="fa fa-id-card dark-gray"></span>
+                  <span class="small dark-gray"
+                    >۳۰۰,۰۰۰ تومان - ۶۰۰,۰۰۰ تومان
+                  </span>
+                </div>
+                <div class="flex py-2">
+                  <span class="dark-gray small">
+                    <i class="fas fa-folder"></i>
+                    بازی ها
+                  </span>
+                  <span class="dark-gray small">
+                    <i class="fas fa-eye"></i>
+                   ۳۳۳ بازدید
+                  </span>
+                </div>
+                <div>
+                  <button class="btn-buy white bg-green">خرید محصولات</button>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="card bg-white">
+                <a href="#"
+                  ><img
+                    src="../home-imgs/card-imgs/accorg-Copy-300x300.jpg"
+                    alt=""
+                /></a>
+                <h3 class="dark-gray barely-big py-2">Ace Combat 7</h3>
+                <div class="price-stuff py-1 bg-gray">
+                  <span class="fa fa-id-card dark-gray"></span>
+                  <span class="small dark-gray">
+                    ۷۵۰,۰۰۰ تومان - ۱,۴۰۰,۰۰۰ تومان
+                  </span>
+                </div>
+                <div class="flex py-2">
+                  <span class="dark-gray small">
+                    <i class="fas fa-folder"></i>
+                    بازی ها
+                  </span>
+                  <span class="dark-gray small">
+                    <i class="fas fa-eye"></i>
+                    ۲۸۲ بازدید
+                  </span>
+                </div>
+                <div>
+                  <button class="btn-buy white bg-green">خرید محصولات</button>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="card bg-white">
+                <a href="#"
+                  ><img
+                    src="../home-imgs/card-imgs/creworg-Copy-300x300.jpg"
+                    alt=""
+                /></a>
+                <h3 class="dark-gray barely-big py-2">The Crew 2</h3>
+                <div class="price-stuff bg-gray py-1">
+                  <span class="fa fa-id-card dark-gray"></span>
+                  <span class="small dark-gray"> ۱,۴۰۰,۰۰۰ تومان</span>
+                </div>
+                <div class="flex py-2">
+                  <span class="dark-gray small">
+                    <i class="fas fa-folder"></i>
+                    بازی ها
+                  </span>
+                  <span class="dark-gray small">
+                    <i class="fas fa-eye"></i>
+                   ۲۷۸ بازدید
+                  </span>
+                </div>
+                <div>
+                  <button class="btn-buy white bg-green">خرید محصولات</button>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="card bg-white">
+                <a href="#"
+                  ><img
+                    src="../home-imgs/card-imgs/juorg-Copy-300x300.jpg"
+                    alt=""
+                /></a>
+                <h3 class="dark-gray barely-big py-2">Resident Evil Village</h3>
+                <div class="price-stuff py-1 bg-gray">
+                  <span class="fa fa-id-card dark-gray"></span>
+                  <span class="small dark-gray">
+                    ۳۵۰,۰۰۰ تومان - ۹۵۰,۰۰۰ تومان
+                  </span>
+                </div>
+                <div class="flex py-2">
+                  <span class="dark-gray small">
+                    <i class="fas fa-folder"></i>
+                    بازی ها
+                  </span>
+                  <span class="dark-gray small">
+                    <i class="fas fa-eye"></i>
+                    ۴۶۸ بازدید
+                  </span>
+                </div>
+                <div>
+                  <button class="btn-buy white bg-green">خرید محصولات</button>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="card bg-white">
+                <a href="#"
+                  ><img
+                    src="../home-imgs/card-imgs/footorg-Copy-300x300.jpg"
+                    alt=""
+                /></a>
+                <h3 class="dark-gray barely-big py-2">Resident Evil Village</h3>
+                <div class="price-stuff bg-gray py-1">
+                  <span class="fa fa-id-card dark-gray"></span>
+                  <span class="small dark-gray">
+                    ۳۶۰,۰۰۰ تومان - ۷۳۰,۰۰۰ تومان
+                  </span>
+                </div>
+                <div class="flex py-2">
+                  <span class="dark-gray small">
+                    <i class="fas fa-folder"></i>
+                    بازی ها
+                  </span>
+                  <span class="dark-gray small">
+                    <i class="fas fa-eye"></i>
+                    ۲۶۹ بازدید
+                  </span>
+                </div>
+                <div>
+                  <button class="btn-buy white bg-green">خرید محصولات</button>
+                </div>
+              </div>
+            </article>
+            <!-- News related to world-games -->
+            <article class="game-news">
+              <header id="news-header" class="flex py-1 bg-gray border">
+                <div>
+                  <h3 class="dark-gray barely-big">مطالب محبوب سایت</h3>
+                </div>
+                <div>
+                  <span class="gray small bold">آرشیو مطالب محبوب</span>
+                </div>
+              </header>
+              <article class="game-items py-2 bg-white border">
+                <!-- Card 1 -->
+                <div class="card white">
+                  <a href="#"><img src="../home-imgs/card-imgs-2/Assassins-Creed-Odyssey-Cult-Kosmos-BaziBaz-300x169.jpg"alt=""/></a>
+                  <div class="content">
+                    <a href="#" class="barely-big gray py-1"
+                      ><p>
+                        محل تمام اعضای فرقه و ارتقای نیزه در بازی Assassin's
+                        Creed Odyssey Cult of Kosmos
+                      </p></a>
+                    <p class="barely-big gray my-1 py-1">
+                      در طول مراحل ابتدایی بازی Assassin's Creed Odyssey شما با
+                      گروهی مخفی، از پرنفوزترین افراد در جهان یونان مواجه
+                      می‌شوید که با نام Cult Of Kosmos شناخته می‌شوند. در تعقیب
+                    </p>
+                  </div>
+                  <div class="flex py-2">
+                    <span class="dark-gray small">
+                      <i class="fas fa-folder"></i>
+                      آموزش,مقالات,مهم
+                    </span>
+                    <span class="dark-gray small">
+                      <i class="fas fa-eye"></i>
+                     ۵۲۳۱۲ بازدید
+                    </span>
+                  </div>
+                  <div>
+                    <button class="btn-more bg-light-gray dark-gray"><i class="fa fa-list py-3 y-center"></i>توضیحات بیشتر</button>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card white">
+                    <a href="#"><img src="../home-imgs/card-imgs-2/002F1CC7-A46B-455F-A9BA-98F536FF5576-300x155.jpeg"alt=""/></a>
+                    <div class="content">
+                      <a href="#" class="barely-big gray py-1"
+                        ><p>
+                         چگونه اکانت های فورتنایت خود را لینک کنیم؟
+                        </p></a>
+                      <p class="barely-big gray my-1 py-1">
+                        قبل از اینکه بتوانید اکانت خود را لینک کنید، اول باید انتخاب کنید که اکانت کدام کنسول شما، اکانت اصلی یا به اصطلاح اکانت پرایمری شما باشد. خود اپیک گیمز ...
+                      </p>
+                    </div>
+                    <div class="flex py-2">
+                      <span class="dark-gray small">
+                        <i class="fas fa-folder"></i>
+                        آموزش
+                      </span>
+                      <span class="dark-gray small">
+                        <i class="fas fa-eye"></i>
+                      ۴۷۳۲۱ بازدید
+                      </span>
+                    </div>
+                    <div>
+                      <button class="btn-more bg-light-gray dark-gray"><i class="fa fa-list py-3 y-center"></i>توضیحات بیشتر</button>
+                    </div>
+                  </div>
+                <!-- Card 3 -->
+                <div class="card white">
+                    <a href="#"><img src="../home-imgs/card-imgs-2/maxresdefault-1-300x169.jpg"alt=""/></a>
+                    <div class="content">
+                      <a href="#" class="barely-big gray py-1"
+                        ><p>
+                        غرب ماورا: تمامی ایستراگ ها و نکات مخفی بازی (قسمت اول)
+                        </p></a>
+                      <p class="barely-big gray my-1 py-1">
+                        بعد از گذشت تقریبا دو هفته از انتشار Red Dead Redemption 2 ، جدا از موفقیت بزرگ دیگری که برای راکستار به دست آمد ، اما بار دیگر راکستار نشان ...
+                      </p>
+                    </div>
+                    <div class="flex py-2">
+                      <span class="dark-gray small">
+                        <i class="fas fa-folder"></i>
+                        آموزش,مقاله,مهم
+                      </span>
+                      <span class="dark-gray small">
+                        <i class="fas fa-eye"></i>
+                      ۱۷۴۰۶ بازدید
+                      </span>
+                    </div>
+                    <div>
+                      <button class="btn-more bg-light-gray dark-gray"><i class="fa fa-list py-3 y-center"></i>توضیحات بیشتر</button>
+                    </div>
+                  </div>
+                <!-- Card 4 -->
+                <div class="card white">
+                    <a href="#"><img src="../home-imgs/card-imgs-2/RE2ERoy-300x169.png"alt=""/></a>
+                    <div class="content">
+                      <a href="#" class="barely-big gray py-1"
+                        ><p>
+                       ۲۵ نکته شخصیتی درباره آرتور مورگان: پروتاگونیست یا در انتظار رستگاری؟ (بخش اول)
+                        </p></a>
+                      <p class="barely-big gray my-1 py-1">
+                        راکستار هیچ گاه شخصیت های سطحی ای نمی سازد. تمامی شخصیت های پرداخته شده توسط راکستار ، از سری Grand Theft Auto بگیر تا مکس پین و Red Dead! اما ...
+                      </p>
+                    </div>
+                    <div class="flex py-2">
+                      <span class="dark-gray small">
+                        <i class="fas fa-folder"></i>
+                        مقاله,مهم
+                      </span>
+                      <span class="dark-gray small">
+                        <i class="fas fa-eye"></i>
+                      ۱۰۸۷۵ بازدید
+                      </span>
+                    </div>
+                    <div>
+                      <button class="btn-more bg-light-gray dark-gray"><i class="fa fa-list py-3 y-center"></i>توضیحات بیشتر</button>
+                    </div>
+                  </div>
+                <!-- Card 5 -->
+                <div class="card white">
+                    <a href="#"><img src="../home-imgs/card-imgs-2/Forza-Horizon-4-winter-gameplay-300x169.jpg"alt=""/></a>
+                    <div class="content">
+                      <a href="#" class="barely-big gray py-1"
+                        ><p>
+                       ۱۰ نکته ضروری که باید قبل از تجربه ۴ Forza Horizon بدانید
+                        </p></a>
+                      <p class="barely-big gray my-1 py-1">
+                        Forza Horizon 4 فوق العاده است! در واقع هم برای حرفه ای ترین ریسینگ باز ها و هم برای آنهایی که تا به حال هیچ گاه پدالی را فشار نداده ...
+                      </p>
+                    </div>
+                    <div class="flex py-2">
+                      <span class="dark-gray small">
+                        <i class="fas fa-folder"></i>
+                        آموزش,مقاله,مهم
+                      </span>
+                      <span class="dark-gray small">
+                        <i class="fas fa-eye"></i>
+                      ۱۴۹۵۱ بازدید
+                      </span>
+                    </div>
+                    <div>
+                      <button class="btn-more bg-light-gray dark-gray"><i class="fa fa-list py-3 y-center"></i>توضیحات بیشتر</button>
+                    </div>
+                  </div>
+                <!-- Card 6 -->
+                <div class="card white">
+                    <a href="#"><img src="../home-imgs/card-imgs-2/RE2ERoy-300x169.png"alt=""/></a>
+                    <div class="content">
+                      <a href="#" class="barely-big gray py-1"
+                        ><p>
+                       ۲۵ نکته شخصیتی درباره آرتور مورگان: پروتاگونیست یا در انتظار رستگاری؟ (بخش اول)
+                        </p></a>
+                      <p class="barely-big gray my-1 py-1">
+                        راکستار هیچ گاه شخصیت های سطحی ای نمی سازد. تمامی شخصیت های پرداخته شده توسط راکستار ، از سری Grand Theft Auto بگیر تا مکس پین و Red Dead! اما ...
+                      </p>
+                    </div>
+                    <div class="flex py-2">
+                      <span class="dark-gray small">
+                        <i class="fas fa-folder"></i>
+                        مقاله,مهم
+                      </span>
+                      <span class="dark-gray small">
+                        <i class="fas fa-eye"></i>
+                      ۱۰۸۷۵ بازدید
+                      </span>
+                    </div>
+                    <div>
+                      <button class="btn-more bg-light-gray dark-gray"><i class="fa fa-list py-3 y-center"></i>توضیحات بیشتر</button>
+                    </div>
+                  </div>
+              </article>
+            </article>
+          </section>
+          <section id="left-side">
+           <!--New Documents-->
+            <article class="new-documents mx-1 px-1">
+              <header id="news-header" class="flex py-1 bg-gray border">
+                <div>
+                  <h3 class="dark-gray barely-big py-1">نوشته های تازه</h3>
+                </div>
+              </header>
+              <div class="card">
+                <ul>
+                  <li class="py-4 barely-big"><a href="#" class="bold dark-gray">راهنمای بازی Resident Evil Village</a></li>
+                  <li class="barely-big py-4"><a href="" class="bold dark-gray">بازی سازان ایرانی با راه اندازی کارزای اعتراضی خواستار لغو محدودیت های انتشار بازی ها هستند</a></li>
+                  <li class="barely-big py-4"><a href="" class="bold dark-gray">گیم پلی های زیبای از بازی Hood:Outlaws and Legends منتشر شد</a></li>
+                  <li class="barely-big py-4"><a href="" class="bold dark-gray">واکنش مایکروسافت به برتری PS5 نسبت به Xbox Series X</a></li>
+                  <li class="barely-big py-5 py-4"><a href="" class="bold dark-gray">تصاویر جدید Cyberpunk 2077 محیط های مختلف بازی را نشان میدهد</a></li>
+                </ul>
+              </div>
+            </article>
+            <!-- Groups of articles -->
+            <article class="g-articles py-6 px-1">
+              <header id="news-header" class="flex py-1 bg-gray border">
+                <div>
+                  <h3 class="dark-gray barely-big py-1">دسته بندی مطالب</h3>
+                </div>
+              </header>
+              <div class="card">
+                <ul>
+                  <li class="py-4 barely-big">
+                    <a href="" class="dark-gray bold">اخبار(۶۳۷)</a>
+                      <ul class="children py-2">
+                        <li><a href="#" class="dark-gray bold">مهم(۱۸۸)</a></li>
+                      </ul>
+                  </li>
+                  <li class="py-4 barely-big">
+                    <a href="" class="dark-gray bold">اطلاعات و سرگرمی(۱۶)</a>
+                      <ul class="children py-4">
+                        <li><a href="#" class="dark-gray bold">مقالات(۷۰)</a></li>
+                      </ul>
+                  </li>
+                  <li class="py-4 barely-big">
+                    <a href="" class="dark-gray bold">آموزش(۱۱)</a>
+                      <ul class="children py-4">
+                        <li><a href="#" class="dark-gray bold">آموزش کنسول(۹)</a></li>
+                      </ul>
+                  </li>
+                  <li class="py-2 barely-big">
+                    <a href="" class="dark-gray bold">مقاله(۴۱)</a>
+                      <ul class="children py-2">
+                        <li><a href="#" class="dark-gray bold">نقد و بررسی(۱۵)</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <!-- Latest Seen -->
+            <article class="latest-seen py-6 px-1">
+              <header id="news-header" class="flex py-1 bg-gray border">
+                <div>
+                  <h3 class="dark-gray barely-big py-1">آخرین دیدگاه ها</h3>
+                </div>
+              </header>
+              <div class="card">
+                <ul>
+                  <li class="py-4 barely-big"><a href="" class="bold dark-gray">مدیریت کل در ۲۵ نکته شخصیتی درباره آرتور مورگان :پروتاگونیست یا در انتظار رستگاری؟ "بخش دوم"</a></li>
+                  <li class="py-4 barely-big"><a href="" class="bold dark-gray">مدیریت کل در ۱۰ نکته ضروری که باید قبل از تجربه Forza Horizon 4 بدانید</a></li>
+                  <li class="py-4 barely-big"><a href="" class="bold dark-gray">Tamara در ۲۵ نکته شخصیتی درباره آرتور مورگان : پروتاگونیست یا در انتظار رستگاری؟ "بخش دوم"</a></li>
+                  <li class="py-4 barely-big"><a href="" class="bold dark-gray">BrandonLal در محل تمام اعضای فرقه و ارتقای نیزه در بازی Assassin's Creed Odyssey Cult of Kosmos</a></li>
+                  <li class="py-2 barely-big"><a href="" class="bold dark-gray">Royal CBD در ۲۵ نکته شخصیتی یا در انتظار رستگاری؟ "بخش دوم"</a></li>
+                </ul>
+              </div>
+            </article>
+            <!-- Empty One -->
+            <article class="empty py-6 px-1 my-1">
+              <div class="card py-2"></div>
+            </article>
+          </section>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer class="footer bg-dark-light">
+        <div class="container">
+          <div class="scroll-to-top bg-scroll opacity">
+            <a href="#main-content" class="white big"><i class="fas fa-chevron-up"></i></a>
+          </div>
+            <div class="right-side-items">
+              <!-- Item 1 -->
+              <article>
+                <h3 class="white l-heading">اطلاعات تماس</h3>
+                <div class="flex-rows">
+                  <div class="mr-2">
+                    <i class="fas fa-map-marker-alt fa-1x pink"></i>
+                  </div>
+                  <div>
+                    <span class="gray2 span-size bold">آدرس:تهران-خیابان فاطمی</span>
+                  </div>
+                </div>
+              </article>
+              <!-- Item 2 -->
+              <article class="my-1">
+                <div class="flex-rows">
+                  <div class="mr-2">
+                    <i class="fas fa-phone-alt fa-1x pink"></i>
+                  </div>   
+                  <div>
+                    <span class="gray2 span-size bold">پشتیبانی ۲۴ ساعته و آنلاین <br> Https://T.Me/Bazibaz_sup</span>
+                  </div>
+                </div>
+              </article>
+              <!-- Item 3 -->
+              <article class="my-1">
+                <div class="flex-rows">
+                  <div class="mr-2">
+                    <i class="fas fa-envelope fa-1x pink"></i>
+                  </div>
+                  <div>
+                    <span class="gray2 span-size bold">Bazibaziran@Gmail.Com</span>
+                  </div>
+                </div>
+              </article>
+              <!-- Item 4 -->
+              <article class="my-1">
+                <div class="social-links">
+                 <a href="" class="dark-yellow big mr-2"><i class="fab fa-instagram fa-1x"></i></a>
+                 <a href="" class="barely-dark-red big"><i class="fab fa-telegram fa-1x"></i></a>
+                </div>
+              </article>
+            </div>
+            <!-- Left Side Footer -->
+            <div class="left-side-footer">
+              <article>
+                <div class="py-2">
+                  <h3 class="white l-heading">عضویت در خبرنامه بازی باز</h3>
+                </div>
+                <div class="py-2">
+                  <h3 class="white l-heading">راهنمای خرید</h3>
+                </div>
+                <div class="flex-rows">
+                  <div class="mx-2">
+                    <a href="#" style="color:#a1a1a6;" class="barely-big">سایت مایکروسافت</a>
+                  </div>
+                  <div>
+                    <a href="#" style="color:#a1a1a6;" class="barely-big">استور ماکروسافت</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+         
+          <!-- Bottom Section -->
+          <div class="author">
+            <div class="row flex-rows">
+              <article class="mr-2">
+                <div class="flex">
+                  <div>
+                    <span class="pink mr-2"><i class="fas fa-unlock-alt "></i></span>
+                  </div>
+                  <div>
+                    <span class="gray2 bold mr-2" style="font-size: 13px;">&copy;کلیه حقوق محصولات و محتوای این سایت متعلق به سایت بازی باز میباشد و هر گونه کپی برداری از محتوا و محصولات سایت پیگرد قانونی دارد</span>
+                  </div>
+                </div>
+              </article>
+              
+              <article>
+                <div class="py-1">
+                 <a href="#" class="dark-gray small bottom-img" style="color:#a1a1a6;">بازی باز فروشگاهی متفاوت و ارزان ترین قیمت ها , بازی های ایکس باکس وان و محصولات ماکروسافت</a>
+                </div>
+              </article>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

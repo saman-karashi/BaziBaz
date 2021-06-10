@@ -1,0 +1,48 @@
+@media screen and (max-width:400px) {
+    #mobile-nav{
+        width: 250px;
+    }
+
+    .footer .scroll-to-top{left: 45%;}
+
+    .modal-search{width: 100%; left: 0;}
+
+    #mobile-menu img{display: none;}
+    #mobile-menu .row{grid-template-columns:repeat(2,2fr);}
+
+    #mobile-nav #mobile-header a{
+    padding: 0 1.5rem .2rem;
+    font-size: .70rem;
+    }
+
+    #mobile-nav #mobile-header span{font-size: .70rem;}
+    #mobile-menu .icons>div{margin: 0 1rem;}
+}
+
+@media screen and (max-width:1060px){
+#menu-1{display: none;}
+#mobile-menu{display: block;}
+
+main .container{
+    grid-template-columns: 1fr;
+}
+
+main #right-side .game-items{
+    grid-template-columns: repeat(2,1fr);
+}
+
+main .container{grid-template-columns: 1fr;}
+main #right-side #slider.my-1{margin: 0;}
+.footer .container{grid-template-columns: 1fr;}
+.footer .author{grid-column: 1; flex-direction: column;}
+.footer .author article>* span{white-space:initial;}
+.footer .author article:nth-child(2){margin-top: 2rem;}
+}
+
+@media screen and (max-width:1200px) {
+main #right-side .services-items{
+    grid-template-columns: repeat(2,1fr);
+}
+
+main #right-side .services-items>*:nth-child(3)::before{border: 0;}
+}
